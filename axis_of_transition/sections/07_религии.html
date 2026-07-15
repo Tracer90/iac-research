@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>7. РЕЛИГИИ | Ось Перехода</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050510;color:#d0d0e0;font:17px/1.8 Georgia,serif;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;background:radial-gradient(ellipse at 50% 30%,#0a0a2a 0%,#050510 70%)}
+.hero h1{font-size:clamp(2.5em,7vw,5em);color:#fff;letter-spacing:2px}
+.hero h1 span{background:linear-gradient(135deg,#ffd700,#ff6b6b,#ffd700);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{color:#8888aa;font-size:clamp(1em,2.5vw,1.3em);max-width:700px;margin:16px auto 25px;line-height:1.6}
+.hero .meta{color:#555588;font-size:0.85em;margin-bottom:15px}
+.hero .meta b{color:#7777aa}
+.dl{display:inline-block;background:linear-gradient(135deg,#ffd700,#ff6b6b);color:#050510;font-weight:700;padding:14px 36px;border-radius:30px;text-decoration:none;margin:8px;font-size:1em;transition:transform 0.2s}
+.dl:hover{transform:scale(1.05)}
+.scroll{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);color:#444;font-size:0.8em;animation:b 2s infinite}
+@keyframes b{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-8px)}}
+.c{max-width:920px;margin:0 auto;padding:20px}
+h2{color:#ffd700;font-size:1.8em;margin:60px 0 25px;border-left:4px solid #ff6b6b;padding-left:18px}
+h3{color:#e0e0ff;font-size:1.2em;margin:35px 0 15px;font-weight:400}
+h4{color:#cc88ff;margin:20px 0 8px;font-size:1.05em}
+p{margin:14px 0;line-height:1.9;color:#b0b0c8}
+.hl{color:#ffd700}
+.em{color:#ff6b6b;font-style:normal}
+.mt{color:#6666aa;font-size:0.9em}
+.ib{background:linear-gradient(135deg,#0d0d2a,#111133);border-left:4px solid #ffd700;border-radius:12px;padding:22px;margin:25px 0}
+.ib .l{color:#ffd700;font-size:0.8em;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.ib .t{color:#d0d0e0;font-style:italic;line-height:1.7}
+.cd{background:linear-gradient(135deg,#0a0a1f,#111133);border-radius:14px;padding:25px;margin:20px 0;border:1px solid rgba(255,255,255,0.04)}
+.cd .t{color:#ffd700;font-weight:700;margin-bottom:6px;font-size:1.05em}
+.cd .d{color:#9090b0;font-size:0.92em;line-height:1.7}
+.pr{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.pr:last-child{border-bottom:none}
+.pr .i{min-width:32px;color:#ff6b6b;font-weight:700;font-size:1em}
+.pr .c{flex:1}
+.pr .c .t{color:#ffd700;font-weight:700}
+.pr .c .d{color:#9090b0;font-size:0.9em;line-height:1.6}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:0.9em}
+th{background:rgba(255,215,0,0.08);color:#ffd700;padding:10px;text-align:left;border-bottom:2px solid rgba(255,215,0,0.2)}
+td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.04);color:#a0a0c0}
+.dl2{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:20px 0}
+.co{background:linear-gradient(135deg,#0a0a1f,#111133);border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,0.04)}
+.co .h{color:#ffd700;font-weight:700;margin-bottom:8px}
+.co ul{list-style:none;padding:0}
+.co li{padding:4px 0;color:#9090b0;font-size:0.9em}
+.co li::before{content:'▸ ';color:#ffd700}
+pre{background:#0d0d20;border-radius:10px;padding:16px;margin:12px 0;overflow-x:auto;font-size:0.85em;color:#b0b0c8;border:1px solid rgba(255,255,255,0.04);line-height:1.6}
+.qt{background:rgba(255,215,0,0.03);border-left:3px solid rgba(255,215,0,0.2);padding:18px 22px;margin:20px 0;border-radius:0 10px 10px 0;font-style:italic;color:#c0c0d8;font-size:1.05em}
+.pd{background:linear-gradient(135deg,#0a0a1f,#111133);border-radius:10px;padding:16px 20px;margin:10px 0;border-left:3px solid #ff6b6b}
+.pd .id{color:#ff6b6b;font-weight:700;font-size:0.85em}
+.pd .t{color:#a0a0b8;font-size:0.95em;margin-top:4px}
+.arc{display:flex;flex-direction:column;align-items:center;margin:30px 0}
+.an{background:linear-gradient(135deg,#111133,#1a1a3a);border:1px solid rgba(255,215,0,0.12);border-radius:10px;padding:12px 24px;margin:3px 0;text-align:center;min-width:180px}
+.an .m{color:#ffd700;font-weight:700}
+.an .s{color:#7777aa;font-size:0.8em;margin-top:2px}
+.arw{color:#444466;font-size:1.1em;margin:2px 0}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:25px 0}
+.stb{background:linear-gradient(135deg,#0d0d2a,#111133);border-radius:12px;padding:18px;text-align:center;border:1px solid rgba(255,255,255,0.04)}
+.stb .n{font-size:1.8em;font-weight:700;background:linear-gradient(135deg,#ffd700,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stb .l{color:#6666aa;font-size:0.8em;margin-top:4px}
+.ft{text-align:center;padding:50px 20px;color:#444466;border-top:1px solid rgba(255,255,255,0.04);margin-top:80px}
+.ft a{color:#6666aa;text-decoration:none}
+.ft a:hover{color:#ffd700}
+@media(max-width:600px){
+  .c{padding:12px}
+  h2{font-size:1.3em}
+  .dl2{grid-template-columns:1fr}
+  .an{min-width:140px;padding:10px 16px}
+  .hero h1{font-size:1.8em}
+}
+
+.nav{background:#0a0a1e;padding:10px 0;text-align:center;position:sticky;top:0;z-index:10;border-bottom:1px solid #222255;overflow-x:auto;white-space:nowrap}
+.nav a{color:#6666aa;text-decoration:none;padding:6px 12px;font-size:0.8em;display:inline-block}
+.nav a:hover{color:#ffd700}
+.nav a.act{color:#ffd700;border-bottom:2px solid #ffd700}
+.ft2{text-align:center;padding:20px;color:#444466;font-size:0.8em}
+</style></head><body>
+<div class='nav'><a href='01_манифест.html'>1. МАНИФЕСТ</a><a href='02_история_циклов.html'>2. ИСТОРИЯ ЦИКЛОВ</a><a href='03_9_принципов.html'>3. 9 ПРИНЦИПОВ</a><a href='04_архитектура.html'>4. АРХИТЕКТУРА</a><a href='05_negative__positive_intelligence.html'>5. NEGATIVE & POSITIVE INTELLIGENCE</a><a href='06_природа_связей.html'>6. ПРИРОДА СВЯЗЕЙ</a><a href='07_религии.html' class='act'>7. РЕЛИГИИ</a><a href='08_ось_перехода_(рисунок).html'>8. ОСЬ ПЕРЕХОДА (РИСУНОК)</a><a href='09_практическое_применение.html'>9. ПРАКТИЧЕСКОЕ ПРИМЕНЕНИЕ</a><a href='10_техническая_спецификация.html'>10. ТЕХНИЧЕСКАЯ СПЕЦИФИКАЦИЯ</a><a href='11_предсказания.html'>11. ПРЕДСКАЗАНИЯ</a><a href='12_финал.html'>12. ФИНАЛ</a></div>
+<div class="c">
+<h2>7. РЕЛИГИИ</h2>
+
+<h2>7. Религии: функция за формой</h2>
+
+<div class="dl2">
+<div class="co">
+<div class="h" style="color:#88dd88">Реальность религий</div>
+<ul>
+<li>Структурируют хаос</li>
+<li>Создают общность</li>
+<li>Дают смысл существования</li>
+<li>Управляют страхом смерти</li>
+<li>Закрепляют нормы поведения</li>
+<li>Передают культурный код</li>
+</ul>
+</div>
+<div class="co">
+<div class="h" style="color:#ff6b6b">Ложные суждения</div>
+<ul>
+<li>«Мы знаем истину» — карта не равна территории</li>
+<li>«Наша книга — слово Бога» — уверенность не доказательство</li>
+<li>«Иноверцы — заблудшие» — 99% религии определяется рождением</li>
+<li>«Страх — это уважение» — ад как рычаг управления</li>
+<li>«Мы знаем, что после смерти» — вера не знание</li>
+<li>«Религия — единственный путь к морали» — доброта не требует разрешения</li>
+</ul>
+</div>
+</div>
+
+<div class="ib">
+  <div class="l">Суть</div>
+  <div class="t">Религия — это социальная технология. Как Windows или macOS — работает, пока ты внутри. Удобна, привычна, даёт понятный интерфейс. Но она — не реальность. Реальность — то, что остаётся, когда убрать все интерфейсы. Задача — не выбрать между «всё зло» и «всё истина». Задача — видеть функцию за формой.</div>
+</div>
+
+<h3>Ось Перехода в религиях мира</h3>
+<table>
+  <tr><th>Традиция</th><th>Ось</th><th>Переход</th></tr>
+  <tr><td>Христианство</td><td>Крест</td><td>Смерть → Воскресение</td></tr>
+  <tr><td>Буддизм</td><td>Срединный Путь</td><td>Страдание → Освобождение</td></tr>
+  <tr><td>Ислам</td><td>Сират аль-мустакым</td><td>Заблуждение → Прямой путь</td></tr>
+  <tr><td>Индуизм</td><td>Гора Меру</td><td>Сансара → Мокша</td></tr>
+  <tr><td>Даосизм</td><td>Дао</td><td>Инь и Ян → Единство</td></tr>
+  <tr><td>Суфизм</td><td>Фана</td><td>Эго → Растворение</td></tr>
+  <tr><td>Иудаизм</td><td>Лестница Иакова</td><td>Земное → Небесное</td></tr>
+</table>
+
+<div class="qt">Разные языки, разные образы, разные ритуалы. Но архитектура одна: ось перехода между двумя состояниями — от страха к доверию, от эго к целому, от хаоса к порядку. Религии — не конкуренты. Это переводы одного и того же текста, написанного на языке, которого никто не знает.</div>
+
+
+</div>
+<div class="ft2"><a href="index.html">⬆ К полной статье</a> · <a href="../index.html">Все исследования</a> · Ось Перехода IAC v8</div>
+</body></html>
